@@ -1,0 +1,28 @@
+create table aeropuerto(
+    nombre varchar(50) primary key, 
+    abierto boolean
+);
+
+create table sillas(
+    premium boolean primary key,
+    id integer,
+    viaja_animales boolean
+);
+
+create table tiquetes(
+    destino boolean primary key, 
+    fecha boolean, 
+    -- si el tiquete es sencillo o no 
+    vip_sencillo boolean 
+);
+
+create table despegue(
+    personas boolean primary key,
+    silla varchar(50),
+    destino_fecha boolean 
+);
+
+create table pago(
+    efectivo boolean primary key,
+    tarjeta boolean 
+);
